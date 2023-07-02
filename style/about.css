@@ -1,0 +1,12 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    background-color: #121C64;
+    color: white;
+    padding: 20px;
+}
+.about h3{
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+}
