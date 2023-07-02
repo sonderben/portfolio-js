@@ -7,8 +7,7 @@
     background-color: #121C64;
     color: white;
     position: sticky;
-
-    height: 30px;
+    
 
    
 }
@@ -16,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 40px;
     width: 100%;
    
 }
@@ -32,7 +32,7 @@
     text-align: end;
 }
 .action a:hover{
-    background-color: #3e489a;
+    background-color: #121C64;
     
 }
 .toggle{
