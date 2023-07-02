@@ -1,0 +1,91 @@
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121C64;
+    color: white;
+    
+
+    height: 30px;
+
+   
+}
+.logo-toggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   
+}
+.action{
+    display: none;
+    flex-direction: column;
+    align-self: flex-end;
+    background-color: #121C64;
+    z-index: 2;
+}
+.action a{
+    padding: 10px 10px 10px 40px;
+    width: 50px;
+    text-align: end;
+}
+.action a:hover{
+    background-color: #3e489a;
+    
+}
+.toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25px;
+    margin-right: 10px;
+}
+.toggle .line{
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+
+
+@media only screen and (min-width: 768px){
+    .toggle{
+        display: none;
+    }
+    header{
+        padding: 0;
+        margin: 0;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #121C64;
+        color: white;
+        padding: 5px 20px;
+    
+       
+    }
+    
+    
+    .action{
+        display: flex;
+        width: fit-content;
+        align-items: end;
+        gap: 10px;
+    }
+    
+    .action a{
+        
+        padding: 5px 10px;
+        width: 50px;
+        text-align: center;
+    }
+    .action a:hover{
+        background-color: #3e489a;
+    }
+}
+

@@ -1,0 +1,71 @@
+
+.home{
+    display: flex;
+    flex-direction: column-reverse;
+
+    background-position: center center;
+        background-size: cover;
+        background-image: url("/ressource/mupanah2.jpeg");
+}
+img{
+    width: 25vh;
+    width: 25vh;
+    margin-top: 20px;
+    vertical-align: middle;
+    align-self: center;
+    border-radius: 50%;
+    border: solid 2px #121C64;
+}
+.presentation{
+    font-family: 'GFS Didot', serif;
+    color: white;
+    text-shadow: 1px 1px #000000;
+}
+.presentation p:nth-child(1), .presentation p:nth-child(2){
+    font-size: 24px;
+}
+
+.presentation p:nth-child(3){
+    font-size: 12px;
+}
+.presentation p:nth-child(3) span{
+    font-size: 10px;
+}
+
+
+@media only screen and (min-width: 768px){
+    .home{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90vh;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("/ressource/mupanah2.jpeg");
+    }
+    
+    img{
+        width: 35vh;
+        width: 35vh;
+        vertical-align: middle;
+        border-radius: 50%;
+        border: solid 2px #121C64;
+    }
+    
+    p{
+        font-family: 'GFS Didot', serif;
+        color: white;
+        text-shadow: 1px 1px #000000;
+    }
+    
+    .presentation p:nth-child(1), .presentation p:nth-child(2){
+        font-size: 44px;
+    }
+    
+    .presentation p:nth-child(3){
+        font-size: 24px;
+    }
+    .presentation p:nth-child(3) span{
+        font-size: 14px;
+    }
+}
