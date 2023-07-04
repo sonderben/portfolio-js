@@ -7,12 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/service.css">
+
+    <script src="logic/script.js"></script>
+    <script src="https://kit.fontawesome.com/25374281b6.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <header>
@@ -20,16 +29,15 @@
             <nav class="logo-toggle">
                 <h3>Benderson Phanor</h3>
 
-            <div class="toggle">
+            <a href="#" id="toggle1" class="toggle">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
-            </div>
+            </a>
 
             </nav>
 
             <div class="action">
-                     <a>Home</a> 
                      <a>About</a>
                      <a>Services</a>
                      <a>Projects</a>
@@ -37,47 +45,85 @@
                      <a>Contact</a>
                     <a>Resume</a>
             </div>
+
+            
             
         </div>
     </header>
 
     <main>
+        
         <div class="home">
             <div class="presentation">
-                <p>Hi i am</p>
+                <p>Hi, i am</p>
                 <p>Benderson Phanor</p>
                 <p>Computer systems engineer/ <span>Residential electrical technician</span> </p>
+
+                <div class="social">
+                    <div>
+                        <a href=""> <i class="fa-brands fa-linkedin"></i> </a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/sonderben"> <i class="fa-brands fa-twitter"></i> </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/Sonderben"> <i class="fa-brands fa-facebook"></i> </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/sonderben/"> <i class="fa-brands fa-instagram"></i> </a>
+                    </div>
+                </div>
+                
+
+
             </div>
             <img class="profile" src="ressource/ben.jpeg" alt="profile">
+            
         </div>
 
-        <div class="about">
+        <div class="about action-item">
             <h3>About</h3>
             <p>¡Hola! Soy un estudiante entusiasta del programa LATAM y estoy enfocado en aprender desarrollo de Front-end. Me apasiona el mundo de la tecnología y me emociona la oportunidad de crear experiencias interactivas y atractivas en la web.
                 Durante mi tiempo en el programa LATAM, he estado adquiriendo habilidades en lenguajes como HTML, CSS y JavaScript, así como también en frameworks populares como React. Me encanta enfrentar desafíos y resolver problemas creativamente utilizando estas herramientas.
                 Soy una persona curiosa y siempre estoy en busca de aprender nuevas tecnologías y técnicas. Me gusta mantenerme actualizado con las últimas tendencias en diseño web y desarrollo de Front-end para poder crear interfaces modernas y optimizadas.</p>
         </div>
         
-        <div class="service">
+        <div class="service action-item">
             <h3>Services</h3>
-            <div class="service-item">
-                <img src="ressource/db.svg" alt="img1">
-                <h4>Diseños de bases de datos</h4>
-                <p>Ofrezco servicios de diseño de bases de datos eficientes y optimizadas para satisfacer tus necesidades específicas. Trabajando en conjunto, puedo analizar tus requisitos y diseñar una estructura de base de datos que sea escalable, fácil de mantener y que cumpla con los estándares de rendimiento. Utilizo tecnologías como MySQL, PostgreSQL o MongoDB, y me aseguro de que tu base de datos esté diseñada de manera lógica y coherente, garantizando una buena organización de los datos y un acceso rápido y eficiente a la información</p>
+            
+            <div class="service-item-group">
+                <div class="service-item">
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h4>Diseños de bases de datos</h4>
+                    <p>Ofrezco servicios de diseño de bases de datos eficientes y optimizadas para satisfacer tus necesidades específicas. Trabajando en conjunto, puedo analizar tus requisitos y diseñar una estructura de base de datos que sea escalable, fácil de mantener y que cumpla con los estándares de rendimiento. Utilizo tecnologías como MySQL, PostgreSQL o MongoDB, y me aseguro de que tu base de datos esté diseñada de manera lógica y coherente, garantizando una buena organización de los datos y un acceso rápido y eficiente a la información</p>
+                </div>
+    
+                <div class="service-item">
+                    <div>
+                        <i class="fa-solid fa-mobile"></i>
+                    </div>
+                    <h4>Desarrollo de aplicaciones móviles</h4>
+                    <p>Desarrollo  aplicaciones  tanto para  iOS como Android. Trabajo en  colaboración con mis clientes para comprender sus necesidades y crear soluciones personalizadas que se ajusten a sus objetivos. Utilizo tecnologías modernas para desarrollar aplicaciones móviles altamente funcionales, intuitivas y visualmente atractivas. </p>
+                </div>
+    
+                <div class="service-item">
+                    <div>
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h4>Creación de API (Back-end)</h4>
+                    <p>Ofrezco servicios de creación de API robustas y escalables para alimentar tus aplicaciones y sistemas. Diseño y desarrollo API eficientes que permiten la comunicación entre diferentes componentes de software, como aplicaciones móviles, sitios web y sistemas de terceros. Mi enfoque se basa en el uso de tecnologías modernas y estándares como REST o GraphQL para garantizar la interoperabilidad y la integración perfecta. Al crear API seguras y bien documentadas, puedo ayudarte a construir una base sólida para tus proyectos de software.</p>
+                </div>
             </div>
 
-            <div class="service-item">
-                <img src="ressource/db.svg" alt="img1">
-                <h4>Desarrollo de aplicaciones móviles</h4>
-                <p>Desarrollo  aplicaciones  tanto para  iOS como Android. Trabajo en  colaboración con mis clientes para comprender sus necesidades y crear soluciones personalizadas que se ajusten a sus objetivos. Utilizo tecnologías modernas para desarrollar aplicaciones móviles altamente funcionales, intuitivas y visualmente atractivas. </p>
-            </div>
-
-            <div class="service-item">
-                <img src="ressource/db.svg" alt="img1">
-                <h4>Creación de API (Back-end)</h4>
-                <p>Ofrezco servicios de creación de API robustas y escalables para alimentar tus aplicaciones y sistemas. Diseño y desarrollo API eficientes que permiten la comunicación entre diferentes componentes de software, como aplicaciones móviles, sitios web y sistemas de terceros. Mi enfoque se basa en el uso de tecnologías modernas y estándares como REST o GraphQL para garantizar la interoperabilidad y la integración perfecta. Al crear API seguras y bien documentadas, puedo ayudarte a construir una base sólida para tus proyectos de software.</p>
-            </div>
         </div>
+
+        
+
+        
+        
+     
     </main>
 
 </body>

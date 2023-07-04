@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30;
-    margin: 20px;
+   
 }
 .service-item{
     display: flex;
@@ -11,13 +11,30 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
-    background-color: #d3d3d3;
+    background-color: var(--primaryBackground);
     padding: 0px 20px 20px 20px;
     border-radius: 15px;
     color: white;
 }
-.service-item img{
-    width: 30px;
-    height: 30px;
+.service-item div{
+   padding: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: var(--secondaryBackground);
     
+}
+.service-item h4{
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+    .service-item-group{
+        display: flex;
+        justify-content: space-between;
+    }
+    .service-item{
+        width: 30%;
+
+    }
 }

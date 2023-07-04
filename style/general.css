@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+.action-item{
+    background-color: var(--secondaryBackground);
+    color: white;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
