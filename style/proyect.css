@@ -1,0 +1,7 @@
+.proyect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+    background-color: blue;
+}

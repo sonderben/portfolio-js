@@ -9,8 +9,8 @@
         background-image: url("/ressource/mupanah2.jpeg");*/
 }
 img{
-    width: 25vh;
-    width: 25vh;
+    width: 35vw;
+    height: 35vw;
     margin-top: 20px;
     vertical-align: middle;
     align-self: center;
@@ -43,8 +43,12 @@ img{
 .social div{
     padding: 10px;
     display: inline;
-    background-color: white;
-    border-radius: 50%;
+    background-color: var(--primaryText);
+    /*border-radius: 50%;*/
+    clip-path: polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+}
+.social>div>a{
+    color: white;
 }
 
 
@@ -61,8 +65,8 @@ img{
     }
     
     img{
-        width: 35vh;
-        width: 35vh;
+        width: 30vw;
+        height: 30vw;
         vertical-align: middle;
         border-radius: 50%;
         
@@ -72,6 +76,9 @@ img{
         font-family: 'GFS Didot', serif;
         color: white;
         text-shadow: 1px 1px #000000;
+    }
+    .presentation{
+        gap: 20px;
     }
     
     .presentation p:nth-child(1), .presentation p:nth-child(2){
