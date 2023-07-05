@@ -4,21 +4,40 @@
     flex-direction: column;
     
 }
-.about p{
+.about div{
     background-color: var(--secondaryBackground);
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 15px;
     height: 50vw;
     overflow-y: hidden;
 }
+
 .about h3{
     text-align: center;
     width: 100%;
     padding-top: 5px;
 }
+.about div > img{
+    display: none;
+}
 
 @media only screen and (min-width: 768px){
     .about p{
+        /*height: fit-content;*/
+        padding: 0 15px;
+    }
+    .about div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         height: fit-content;
     }
+    .about div > img{
+        display: inline;
+
+    }
+    .about p{
+        min-width: 40%;
+    }
+    
 }

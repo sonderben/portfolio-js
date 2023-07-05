@@ -21,8 +21,7 @@
 }
 
 .proyect-item div img{
-    width: 25vw;
-    float: left;
+    width: 100%;
     height: auto;
     margin-right: 15px;
     margin-bottom: 1px;
@@ -41,7 +40,7 @@
     }
 
     .proyect-item div img{
-        width: 15vw;
+        width: 100%;
         
     }
 }
