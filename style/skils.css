@@ -1,7 +1,6 @@
 .skils{
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
 }
 
@@ -10,6 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 15px;
 }
 
 .skils-item p{
