@@ -1,22 +1,22 @@
 
-// const toggle = document.querySelector("#toggle1");
-// toggle.addEventListener('click', function() {
-//   console.log('Button clicked!');
-// });
 
+document.addEventListener("DOMContentLoaded",()=>{
 
+    const hamburger = document.querySelector(".hamburger")//hamburger
+const navMenu = document.querySelector(".nav-menu")
 
-document.addEventListener('DOMContentLoaded',()=>{
+hamburger.addEventListener("click",()=>{
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
 
-    const actionElement = document.querySelector('.action');
-    
+document.querySelectorAll(".nav-link").forEach(n=> n.addEventListener("click",
+()=>{
+    /*hamburger.classList.remove("remove");
+    navMenu.classList.remove("active");*/
 
-
-    const toggle = document.querySelector("#toggle1");
-    toggle.addEventListener('click', function() {
-        
-        
-    });
-
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}))
 
 })

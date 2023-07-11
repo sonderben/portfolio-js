@@ -31,3 +31,13 @@
     color: #ccc;
     font-size: 0.7em;
 }
+
+
+@media only screen and (max-width: 768px)  {
+    .skils-item-group{
+        /*display: grid;
+        grid-template-columns: repeat(3 , 1fr);*/
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
